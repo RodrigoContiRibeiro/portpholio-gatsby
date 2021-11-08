@@ -1,0 +1,26 @@
+.container {
+  height: 200vh;
+  background: #a60815;
+  display: flex;
+  position: relative;
+}
+
+.container h1 {
+  color: #f2f2f2;
+  font-size: calc(7.5vw + 0.25rem);
+  text-transform: lowercase;
+  font-weight: 500;
+
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.container section {
+  width: 50%;
+  height: 100%;
+}
+
+.container section:first-of-type {
+  border-right: 1px solid #f2f2f2;
+}

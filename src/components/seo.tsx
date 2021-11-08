@@ -80,9 +80,9 @@ function SEO({ description, lang, meta, title }: Props) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `pt-br`,
   meta: [],
-  description: ``,
+  description: `Portfólio de Rodrigo Conti Ribeiro`,
 }
 
 SEO.propTypes = {

@@ -1,0 +1,14 @@
+.container {
+  height: 25vh;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.link img {
+  min-width: 100px;
+  width: 10%;
+}

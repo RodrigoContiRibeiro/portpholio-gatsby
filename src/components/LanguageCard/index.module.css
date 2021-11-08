@@ -1,0 +1,53 @@
+.link {
+  width: 33.33%;
+  text-decoration: none;
+}
+
+.card {
+  height: 100vh;
+  width: 100%;
+  background: #a60815;
+  display: flex;
+  justify-content: flex-end;
+  will-change: background;
+  transition: 200ms ease;
+}
+
+.card:hover {
+  background: #f2f2f2;
+}
+
+.card h2 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 5px 0 0;
+  color: #f2f2f2;
+  font-size: calc(4vw + 0.25rem);
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 0.025em;
+  will-change: color;
+  transition: 200ms ease;
+}
+
+.card:hover h2 {
+  color: #a60815;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.top {
+  padding-top: 10%;
+  align-items: flex-start;
+}
+
+.center {
+  align-items: center;
+}
+
+.bottom {
+  padding-bottom: 10%;
+  align-items: flex-end;
+}

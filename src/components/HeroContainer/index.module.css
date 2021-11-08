@@ -1,0 +1,65 @@
+.container {
+  background: #a60815;
+  min-height: 75vh;
+  position: relative;
+}
+
+.container h1,
+.container h2 {
+  font-family: 'Jost';
+  letter-spacing: 0.025em;
+  margin: 0;
+}
+
+.container h1 {
+  font-size: 200px;
+  font-size: calc(7.5vw + 0.25rem);
+  font-weight: 500;
+}
+
+.container h2 {
+  font-weight: 700;
+}
+
+.titleText {
+  width: 100%;
+  text-align: center;
+  color: #a60815;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+.myName {
+  color: #f2f2f2;
+  padding-top: 7.5%;
+  padding-right: 25px;
+  text-align: right;
+}
+
+.aboutContent {
+  margin-left: auto;
+  padding-top: 7.5%;
+  padding-right: 25px;
+  color: #f2f2f2;
+  width: 70%;
+  text-align: justify;
+  font-size: calc(1vw + 1vh + 0.25rem);
+  line-height: 115%;
+  font-family: 'Jost';
+  font-weight: 500;
+}
+
+.about {
+  position: fixed;
+  writing-mode: vertical-rl;
+  bottom: 0;
+  left: 0;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  font-size: calc(4vw + 0.25rem);
+}
+
+.about a {
+  color: #f2f2f2;
+  display: block;
+}
