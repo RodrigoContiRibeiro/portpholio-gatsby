@@ -102,3 +102,55 @@ export const notableWorks: Work[] = [
     url: '',
   },
 ]
+export const CompitiNotevole: Work[] = [
+  {
+    name: 'Rapporto di Lettura',
+    area: 'Linguaggio',
+    url: '',
+  },
+  {
+    name: 'Poesia "Gloriosa"',
+    area: 'Linguaggio',
+    url: '',
+  },
+  {
+    name: 'Ricerca su Behr',
+    area: 'Linguaggio',
+    url: '',
+  },
+  {
+    name: 'Progetto Semana da Arte',
+    area: 'Linguaggio',
+    url: '',
+  },
+  {
+    name: 'Ricerca sul Nazismo',
+    area: 'Umanistiche',
+    url: '',
+  },
+  {
+    name: 'Ricerca sulla Mongolia',
+    area: 'Umanistiche',
+    url: '',
+  },
+  {
+    name: `Ricerca sul periodico L'Italiano`,
+    area: 'Umanistiche',
+    url: '',
+  },
+  {
+    name: 'Grafici sul Brasil',
+    area: 'Naturale',
+    url: '',
+  },
+  {
+    name: 'Ricerca suglle funzioni organiche',
+    area: 'Naturale',
+    url: '',
+  },
+  {
+    name: 'Juri Simulato',
+    area: 'Naturale',
+    url: '',
+  },
+]

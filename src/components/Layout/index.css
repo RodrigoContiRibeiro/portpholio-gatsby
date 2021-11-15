@@ -1,3 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+#___gatsby,
+#gatsby-focus-wrapper {
+  min-height: 100%;
+  height: 100%;
+}
+
+main {
+  min-height: 75%;
+}
+
+.trabalhos-area {
+  padding: 5% 0 0 0;
+}
+
+.trabalhos-area > div:last-of-type {
+  padding: 2.5% 0;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -189,9 +219,6 @@ html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
-}
-* {
-  box-sizing: inherit;
 }
 *:before {
   box-sizing: inherit;

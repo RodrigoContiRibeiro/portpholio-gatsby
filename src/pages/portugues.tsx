@@ -6,9 +6,15 @@ import { trabalhosNotaveis } from '../works'
 
 const Portugues = () => {
   return (
-    <Layout>
+    <Layout changeLangText=" Mudar Língua" rootLink="portugues">
       <HeroContainer title="Portifólio" aboutText="Sobre" home={true} />
-      <Trabalhos works={trabalhosNotaveis} title="Trabalhos Notáveis" />
+      <Trabalhos
+        works={trabalhosNotaveis}
+        title="Trabalhos Notáveis"
+        worksLink="Sobre"
+        allWorksText="Todos os trabalhos"
+        allWorksLink="trabalhos"
+      />
     </Layout>
   )
 }

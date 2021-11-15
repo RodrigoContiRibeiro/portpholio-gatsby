@@ -1,6 +1,6 @@
 .container {
   background: #a60815;
-  min-height: 75vh;
+  min-height: 80vh;
   position: relative;
 }
 
@@ -12,7 +12,6 @@
 }
 
 .container h1 {
-  font-size: 200px;
   font-size: calc(7.5vw + 0.25rem);
   font-weight: 500;
 }
@@ -62,4 +61,14 @@
 .about a {
   color: #f2f2f2;
   display: block;
+}
+
+@media only screen and (max-width: 640px) {
+  .container h1 {
+    font-size: calc(5vw + 1.25rem);
+  }
+
+  .about {
+    font-size: calc(2vw + 1rem);
+  }
 }

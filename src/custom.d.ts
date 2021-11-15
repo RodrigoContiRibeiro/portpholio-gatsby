@@ -6,7 +6,12 @@ declare module '*.svg' {
 declare module '*.css'
 
 declare type Work = {
-  name: String
-  area: String
-  url: String
+  name: string
+  area: string
+  url: string
+}
+
+declare interface Area {
+  areaName: string
+  link: string
 }

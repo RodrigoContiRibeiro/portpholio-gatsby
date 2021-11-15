@@ -3,16 +3,16 @@ import PropTypes from 'prop-types'
 
 import Header from '../Header'
 
-import './index.css'
-
 interface ILayoutProps {
   children: ReactNode | ReactNode[]
+  changeLangText: string
+  rootLink: string
 }
 
-const Layout = ({ children }: ILayoutProps) => {
+const Layout = ({ children, changeLangText, rootLink }: ILayoutProps) => {
   return (
     <>
-      <Header />
+      <Header rootLink={rootLink} changeLangText={changeLangText} />
       <main>{children}</main>
     </>
   )
@@ -20,6 +20,8 @@ const Layout = ({ children }: ILayoutProps) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  rootLink: PropTypes.string,
+  changLangText: PropTypes.string,
 }
 
 export default Layout

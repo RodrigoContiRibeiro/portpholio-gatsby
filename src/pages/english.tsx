@@ -6,9 +6,20 @@ import { notableWorks } from '../works'
 
 const English = () => {
   return (
-    <Layout>
-      <HeroContainer title="Portpholio" aboutText="About" home={true} />
-      <Trabalhos works={notableWorks} title="Notable Works" />
+    <Layout changeLangText="Change Language" rootLink="english">
+      <HeroContainer
+        title="Portpholio"
+        aboutText="About"
+        home={true}
+        works={false}
+      />
+      <Trabalhos
+        works={notableWorks}
+        title="Notable Works"
+        worksLink="About"
+        allWorksText="All Works"
+        allWorksLink="works"
+      />
     </Layout>
   )
 }

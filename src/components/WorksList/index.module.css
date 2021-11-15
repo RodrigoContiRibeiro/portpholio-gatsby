@@ -1,7 +1,15 @@
 .container {
-  width: 80%;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  padding: 0 5%;
+  margin: 2.5% 0;
+  color: #f2f2f2;
+
+  will-change: background, color;
+  transition: 200ms ease;
+}
+
+.container:hover {
+  background: #f2f2f2;
+  color: #a60815;
 }
 
 .link {
@@ -9,11 +17,13 @@
   display: block;
   width: 100%;
   height: 100px;
-  color: #f2f2f2;
 
+  color: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  border-bottom: 2px solid #f2f2f2;
 }
 
 .container span:first-of-type {
@@ -37,4 +47,40 @@
   margin-bottom: -5px;
   font-family: 'Jost';
   font-weight: 500;
+}
+
+.allWorksContainer {
+  padding: 20% 0;
+}
+
+.allWorksContainer a {
+  display: block;
+  padding: 5% 0;
+  width: 90%;
+  margin: 0 auto;
+
+  font-family: 'Jost';
+  color: #f2f2f2;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  font-size: calc(1vw + 1vh + 0.25rem);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background: #a60815;
+  border: 3px solid #f2f2f2;
+  will-change: background, color;
+  transition: 200ms ease;
+}
+
+.allWorksContainer a:hover {
+  background: #f2f2f2;
+  color: #a60815;
+}
+
+@media only screen and (max-width: 640px) {
+  .allWorksContainer {
+    margin: 10% 0;
+  }
 }
