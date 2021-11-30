@@ -18,7 +18,7 @@ const Italiano = () => {
         title="Compiti Notevole"
         worksLink="Su di me"
         allWorksText="Tutti i lavori"
-        allWorksLink="lavori"
+        allWorksLink="compiti"
       />
     </Layout>
   )

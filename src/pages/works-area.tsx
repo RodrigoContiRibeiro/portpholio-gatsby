@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import removeAccents from 'remove-accents'
 import HeroContainer from '../components/HeroContainer'
 import Layout from '../components/Layout'
-
 import WorksList from '../components/WorksList'
+import { mandatoryWorks } from '../requiredWorks'
 
-import { trabalhosObrigatorios } from '../requiredWorks'
-
-const TrabalhosArea = () => {
+const WorksArea = () => {
   const [area, setArea] = useState<string>('')
 
   useEffect(() => {
@@ -17,23 +15,23 @@ const TrabalhosArea = () => {
 
   return (
     <>
-      <Layout changeLangText="Mudar Língua" rootLink="portugues">
+      <Layout changeLangText="Change Language" rootLink="english">
         <HeroContainer
           title={`${area}`}
-          aboutText="Sobre"
+          aboutText="About"
           home={false}
           works={false}
         >
           <div className="trabalhos-area">
             <WorksList
-              works={trabalhosObrigatorios.filter(work => {
+              works={mandatoryWorks.filter(work => {
                 if (
                   removeAccents(work.area.toLowerCase()) === removeAccents(area)
                 )
                   return work
               })}
-              allWorksLink="/trabalhos"
-              allWorksText="Todos os Trabalhos"
+              allWorksLink="/works"
+              allWorksText="All Works"
             />
           </div>
         </HeroContainer>
@@ -42,4 +40,4 @@ const TrabalhosArea = () => {
   )
 }
 
-export default TrabalhosArea
+export default WorksArea
